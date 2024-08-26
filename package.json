@@ -6,7 +6,7 @@
     "!src/**",
     "dist/**"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An animated border component that creates a visually stunning beam of light traveling along the borders of any container. Perfect for adding a modern, dynamic touch to your web components.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
