@@ -44,41 +44,30 @@ function App() {
 }
 ```
 
-### Default CSS Variables
+## `BorderBeam` Component Props
 
-Add the variables below to your `global.css` (or equivalent stylesheet) to customize the colors and themes.
+The `BorderBeam` component accepts several props to customize its behavior and appearance:
 
-```css
-/* Default styles */
-:root {
-  --size: 200px;
-  --duration: 15s;
-  --anchor: 90%;
-  --border-width: 1.5px;
-  --color-from: #ffaa40;
-  --color-to: #9c40ff;
-  --delay: 0s;
-}
+| Prop         | Type       | Description                                                                                  |
+| ------------ | ---------- | -------------------------------------------------------------------------------------------- |
+| `className`  | `string`   | An optional CSS class to apply custom styling.                                               |
+| `size`       | `number`   | The size of the animated beam. Defaults to `200`.                                            |
+| `duration`   | `number`   | The duration of the animation in seconds. Defaults to `15`.                                  |
+| `borderWidth`| `number`   | The width of the border in pixels. Defaults to `1.5`.                                        |
+| `anchor`     | `number`   | The anchor point of the beam. Defaults to `90`.                                              |
+| `colorFrom`  | `string`   | The starting color of the gradient. Defaults to `#ffaa40`.                                   |
+| `colorTo`    | `string`   | The ending color of the gradient. Defaults to `#9c40ff`.                                     |
+| `delay`      | `number`   | Delay before the animation starts in seconds. Defaults to `0`.                               |
+
+### Customizing Colors
+
+You can easily customize the colors of the border beam by using the `colorFrom` and `colorTo` props. For more advanced customization, you can also use CSS variables within your project.
+
+Example of customizing colors:
+
+```jsx
+<BorderBeam colorFrom="#ff0000" colorTo="#0000ff" />
 ```
-
-### Customizing Styles with CSS Variables
-
-The component leverages CSS variables, which makes it easy to customize the appearance of the border beam effect. You can redefine these variables in your project’s stylesheet.
-
-Example of customizing the border beam colors:
-
-```css
-:root {
-  --color-from: #ff0000;
-  --color-to: #0000ff;
-}
-```
-
-By utilizing these CSS variables, you can tailor the `BorderBeam` component to match your project’s design aesthetics seamlessly.
-
-### Applying the Variables
-
-The BorderBeam component automatically uses the variables mentioned above, so you only need to change the values in your global stylesheet to apply your custom styles.
 
 ## Contributing
 
