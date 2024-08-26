@@ -1,0 +1,41 @@
+{
+  "name": "@stianlarsen/border-beam",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "!src/**",
+    "dist/**"
+  ],
+  "version": "1.0.0",
+  "description": "An animated border component that creates a visually stunning beam of light traveling along the borders of any container. Perfect for adding a modern, dynamic touch to your web components.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && shx mkdir -p dist/css/  && shx cp src/css/borderBeam.css dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stianlarsen/borderBeam.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "scss",
+    "animation",
+    "border",
+    "light",
+    "beam",
+    "ui",
+    "component"
+  ],
+  "author": "Stian Larsen <stian.larsen@mac.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stianlarsen/borderBeam/issues"
+  },
+  "homepage": "https://github.com/stianlarsen/borderBeam#readme",
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "shx": "^0.3.4",
+    "typescript": "^5.5.4"
+  }
+}
