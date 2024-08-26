@@ -1,8 +1,8 @@
 import React from "react";
-import { BorderBeamProps } from "./borderBeamTypes";
 import "./css/borderBeam.css";
+import { BorderBeamProps } from "./types/types";
 
-export const BorderBeam: React.FC<BorderBeamProps> = ({
+export const BorderBeam = ({
   className,
   size = 200,
   duration = 15,
@@ -11,7 +11,7 @@ export const BorderBeam: React.FC<BorderBeamProps> = ({
   colorFrom = "#ffaa40",
   colorTo = "#9c40ff",
   delay = 0,
-}) => {
+}: BorderBeamProps) => {
   return (
     <div
       style={

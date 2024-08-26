@@ -5,18 +5,24 @@
   border: calc(var(--border-width)) solid transparent;
   border-radius: inherit;
   -webkit-mask-clip: padding-box, border-box !important;
-          mask-clip: padding-box, border-box !important;
+  mask-clip: padding-box, border-box !important;
   -webkit-mask-composite: source-in, xor !important;
-          mask-composite: intersect !important;
-  -webkit-mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
-          mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+  mask-composite: intersect !important;
+  -webkit-mask: linear-gradient(transparent, transparent),
+    linear-gradient(white, white);
+  mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
 }
 .borderBeam::after {
   content: "";
   position: absolute;
   aspect-ratio: 1/1;
   width: calc(var(--size));
-  background: linear-gradient(to left, var(--color-from), var(--color-to), transparent);
+  background: linear-gradient(
+    to left,
+    var(--color-from),
+    var(--color-to),
+    transparent
+  );
   offset-anchor: calc(var(--anchor)) 50%;
   offset-path: rect(0 auto auto 0 round calc(var(--size)));
   animation: border-beam calc(var(--duration)) infinite linear;
@@ -27,4 +33,4 @@
   100% {
     offset-distance: 100%;
   }
-}/*# sourceMappingURL=borderBeam.css.map */
+}
