@@ -6,8 +6,14 @@
   "types": "dist/index.d.ts",
   "files": [
     "!src/**",
-    "dist/**"
+    "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && shx mkdir -p dist/css/  && shx cp src/css/borderBeam.css dist/css/"
@@ -33,12 +39,11 @@
     "url": "https://github.com/Stianlars1/borderBeam/issues"
   },
   "homepage": "https://github.com/Stianlars1/borderBeam#readme",
-  "devDependencies": {
-    "@types/react": "^18.3.4",
-    "shx": "^0.3.4",
-    "typescript": "^5.5.4"
-  },
   "peerDependencies": {
     "react": "^18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "typescript": "^5.5.4"
   }
 }
