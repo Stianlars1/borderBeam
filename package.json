@@ -1,6 +1,6 @@
 {
   "name": "@stianlarsen/border-beam",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An animated border component that creates a visually stunning beam of light traveling along the borders of any container. Perfect for adding a modern, dynamic touch to your web components.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
