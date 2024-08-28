@@ -40,6 +40,9 @@
     "url": "https://github.com/Stianlars1/borderBeam/issues"
   },
   "homepage": "https://github.com/Stianlars1/borderBeam#readme",
+  "dependencies": {
+    "react": "^18"
+  },
   "peerDependencies": {
     "react": "^18"
   },
