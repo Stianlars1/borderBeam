@@ -1,7 +1,14 @@
-
 # Border Beam
 
 An animated border component that creates a visually stunning beam of light traveling along the borders of any container. Perfect for adding a modern, dynamic touch to your web components.
+
+## Preview
+
+<video width="600" controls>
+  <source src="https://github.com/Stianlars1/borderBeam/raw/315d8b39474f4272ec146b233aaf2e790f11b269/borderbeam.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+_A preview of @stianlarsen/border-beam_
 
 **Check out the [website](https://your-website-link.com) for demos, examples, and further info.**
 
@@ -37,7 +44,7 @@ import { BorderBeam } from "@stianlarsen/border-beam";
 
 function App() {
   return (
-    <div style={{ position: 'relative', width: '300px', height: '300px' }}>
+    <div style={{ position: "relative", width: "300px", height: "300px" }}>
       <BorderBeam size={300} duration={10} />
     </div>
   );
@@ -48,16 +55,16 @@ function App() {
 
 The `BorderBeam` component accepts several props to customize its behavior and appearance:
 
-| Prop         | Type       | Description                                                                                  |
-| ------------ | ---------- | -------------------------------------------------------------------------------------------- |
-| `className`  | `string`   | An optional CSS class to apply custom styling.                                               |
-| `size`       | `number`   | The size of the animated beam. Defaults to `200`.                                            |
-| `duration`   | `number`   | The duration of the animation in seconds. Defaults to `15`.                                  |
-| `borderWidth`| `number`   | The width of the border in pixels. Defaults to `1.5`.                                        |
-| `anchor`     | `number`   | The anchor point of the beam. Defaults to `90`.                                              |
-| `colorFrom`  | `string`   | The starting color of the gradient. Defaults to `#ffaa40`.                                   |
-| `colorTo`    | `string`   | The ending color of the gradient. Defaults to `#9c40ff`.                                     |
-| `delay`      | `number`   | Delay before the animation starts in seconds. Defaults to `0`.                               |
+| Prop          | Type     | Description                                                    |
+| ------------- | -------- | -------------------------------------------------------------- |
+| `className`   | `string` | An optional CSS class to apply custom styling.                 |
+| `size`        | `number` | The size of the animated beam. Defaults to `200`.              |
+| `duration`    | `number` | The duration of the animation in seconds. Defaults to `15`.    |
+| `borderWidth` | `number` | The width of the border in pixels. Defaults to `1.5`.          |
+| `anchor`      | `number` | The anchor point of the beam. Defaults to `90`.                |
+| `colorFrom`   | `string` | The starting color of the gradient. Defaults to `#ffaa40`.     |
+| `colorTo`     | `string` | The ending color of the gradient. Defaults to `#9c40ff`.       |
+| `delay`       | `number` | Delay before the animation starts in seconds. Defaults to `0`. |
 
 ### Customizing Colors
 
