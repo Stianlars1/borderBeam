@@ -11,8 +11,6 @@ An animated border component that creates a visually stunning beam of light trav
 </video>
 _A preview of @stianlarsen/border-beam_
 
-**Check out the [website](https://your-website-link.com) for demos, examples, and further info.**
-
 ## Features
 
 - **Customizable Border Component**: Easily adaptable border beam component for various use cases, allowing for dynamic, animated borders with customizable colors and timing.
