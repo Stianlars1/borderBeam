@@ -1,4 +1,4 @@
-# Border Beam
+# @stianlarsen/border-beam
 
 [![npm version](https://badge.fury.io/js/%40stianlarsen%2Fborder-beam.svg)](https://badge.fury.io/js/%40stianlarsen%2Fborder-beam)
 

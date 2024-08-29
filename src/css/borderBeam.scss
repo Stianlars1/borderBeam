@@ -2,28 +2,29 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  border: calc(var(--border-width)) solid transparent;
+  border: calc(var(--border-width, 1.5px)) solid transparent;
   border-radius: inherit;
 
   mask-clip: padding-box, border-box !important;
   mask-composite: intersect !important;
   mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
-
+  will-change: auto;
   &::after {
     content: "";
     position: absolute;
     aspect-ratio: 1 / 1;
-    width: calc(var(--size));
+    width: calc(var(--size, 200px));
     background: linear-gradient(
       to left,
-      var(--color-from),
-      var(--color-to),
+      var(--color-from, #ffaa40),
+      var(--color-to, #9c40ff),
       transparent
     );
-    offset-anchor: calc(var(--anchor)) 50%;
+    offset-anchor: calc(var(--anchor, 90)) 50%;
     offset-path: rect(0 auto auto 0 round calc(var(--size)));
-    animation: border-beam calc(var(--duration)) infinite linear;
-    animation-delay: var(--delay);
+    animation: border-beam calc(var(--duration, 15s)) infinite linear;
+    animation-delay: calc(var(--delay, 0s));
+    will-change: auto;
   }
 }
 
