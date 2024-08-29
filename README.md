@@ -4,7 +4,7 @@ An animated border component that creates a visually stunning beam of light trav
 
 ## Preview
 
-<video width="600" controls>
+<video width="600" autoplay loop muted>
   <source src="https://github.com/Stianlars1/borderBeam/raw/315d8b39474f4272ec146b233aaf2e790f11b269/borderbeam.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
