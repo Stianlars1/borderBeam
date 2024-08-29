@@ -1,5 +1,7 @@
 # Border Beam
 
+[![npm version](https://badge.fury.io/js/%40stianlarsen%2Fborder-beam.svg)](https://badge.fury.io/js/%40stianlarsen%2Fborder-beam)
+
 An animated border component that creates a visually stunning beam of light traveling along the borders of any container. Perfect for adding a modern, dynamic touch to your web components.
 
 ## Preview
