@@ -6,6 +6,7 @@ An animated border component that creates a visually stunning beam of light trav
 
 <video width="600" autoplay loop muted>
   <source src="https://github.com/Stianlars1/borderBeam/raw/315d8b39474f4272ec146b233aaf2e790f11b269/borderbeam.mp4" type="video/mp4">
+    <img src="https://raw.githubusercontent.com/Stianlars1/borderBeam/15c85e33676a198ea0b0d89f433c3afb52ca7285/borderbeam.png" alt="Fallback Image">
   Your browser does not support the video tag.
 </video>
 _A preview of @stianlarsen/border-beam_
