@@ -9,6 +9,7 @@ An animated border component that creates a visually stunning beam of light trav
     <img src="https://raw.githubusercontent.com/Stianlars1/borderBeam/15c85e33676a198ea0b0d89f433c3afb52ca7285/borderbeam.png" alt="Fallback Image">
   Your browser does not support the video tag.
 </video>
+
 _A preview of @stianlarsen/border-beam_
 
 ## Features
