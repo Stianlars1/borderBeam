@@ -2,26 +2,28 @@
   "name": "@stianlarsen/border-beam",
   "version": "1.0.11",
   "description": "An animated border component that creates a visually stunning beam of light traveling along the borders of any container. Perfect for adding a modern, dynamic touch to your web components.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "!src/**",
-    "dist",
-    "types"
-  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
-    "./css": "./dist/css/borderBeam.css"
+    "./styles.css": "./dist/styles.css"
   },
-  "next": {
-    "cssModules": false
-  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && shx mkdir -p dist/css/  && shx cp src/css/borderBeam.css dist/css/"
+    "build": "tsup && cp src/components/BorderBeam/borderBeam.css dist/styles.css",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,13 +32,15 @@
   "keywords": [
     "react",
     "typescript",
-    "scss",
     "animation",
     "border",
     "light",
     "beam",
     "ui",
-    "component"
+    "component",
+    "next.js",
+    "rsc",
+    "use-client"
   ],
   "author": "Stian Larsen <stian.larsen@mac.com>",
   "license": "MIT",
@@ -45,13 +49,13 @@
   },
   "homepage": "https://github.com/Stianlars1/borderBeam#readme",
   "peerDependencies": {
-    "react": "^18 || ^19",
-    "react-dom": "^18 || ^19"
+    "react": ">=18.0.0 <20.0.0",
+    "react-dom": ">=18.0.0 <20.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18 || ^19",
-    "@types/react-dom": "^18 || ^19",
-    "shx": "^0.3.4",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
     "typescript": "^5.5.4"
   }
 }

@@ -1,17 +1,27 @@
-# Source files
-# src/
-
-# TypeScript files
-# **/*.ts
-# **/*.tsx
-
-# Other unnecessary files
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
 *.tsbuildinfo
 
-# configuration files
-# tsconfig.json
-.npmignore
-.npmrc
-
+# Test coverage
+coverage/

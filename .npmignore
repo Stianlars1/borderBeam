@@ -1,0 +1,27 @@
+# Source files
+src/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+.gitignore
+.npmignore
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Media files (for demo purposes only)
+*.mp4
+*.mov
+*.gif
+*.png
+
+# Dev files
+node_modules/
+*.log
+*.tsbuildinfo
+coverage/
