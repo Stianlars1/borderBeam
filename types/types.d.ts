@@ -1,6 +1,4 @@
-import React from 'react';
-
-interface BorderBeamProps {
+export interface BorderBeamProps {
   className?: string;
   size?: number;
   duration?: number;
@@ -10,7 +8,3 @@ interface BorderBeamProps {
   colorTo?: string;
   delay?: number;
 }
-
-declare const BorderBeam: React.FC<BorderBeamProps>;
-
-export { BorderBeam };

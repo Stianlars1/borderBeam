@@ -1,24 +1,41 @@
 {
   "compilerOptions": {
+    // Output settings - tsup handles the actual build, this is for type-checking
     "target": "ES2020",
-    "lib": ["DOM", "DOM.Iterable", "ES2020"],
-    "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // JSX settings - react-jsx is more efficient for React 17+
+    "jsx": "react-jsx",
+
+    // Type declaration settings
     "declaration": true,
     "declarationMap": true,
+
+    // Strict mode for better type safety
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    // Interop settings
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "isolatedModules": true,
+
+    // Skip checking node_modules types
+    "skipLibCheck": true,
+
+    // No emit - tsup handles building
+    "noEmit": true,
+
+    // Path resolution
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

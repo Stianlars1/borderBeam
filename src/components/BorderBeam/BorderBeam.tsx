@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import type { BorderBeamProps } from "./BorderBeam.types";
+import { BorderBeamProps } from "../types/types";
 
 export const BorderBeam: React.FC<BorderBeamProps> = ({
   className,

@@ -1,7 +1,5 @@
 "use client";
-'use strict';
-
-var jsxRuntime = require('react/jsx-runtime');
+import { jsx } from 'react/jsx-runtime';
 
 // src/index.tsx
 var BorderBeam = ({
@@ -14,7 +12,7 @@ var BorderBeam = ({
   colorTo = "#9c40ff",
   delay = 0
 }) => {
-  return /* @__PURE__ */ jsxRuntime.jsx(
+  return /* @__PURE__ */ jsx(
     "div",
     {
       style: {
@@ -31,6 +29,6 @@ var BorderBeam = ({
   );
 };
 
-exports.BorderBeam = BorderBeam;
-//# sourceMappingURL=index.js.map
-//# sourceMappingURL=index.js.map
+export { BorderBeam };
+//# sourceMappingURL=index.mjs.map
+//# sourceMappingURL=index.mjs.map
