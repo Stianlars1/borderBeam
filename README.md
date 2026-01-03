@@ -17,19 +17,11 @@ npm install @stianlarsen/border-beam
 
 ## Usage
 
-<<<<<<< HEAD
-```tsx
-import { BorderBeam } from "@stianlarsen/border-beam";
-import "@stianlarsen/border-beam/styles.css";
-=======
-### Border Beam
-
 Import the component and its styles in your React project:
 
-```jsx
+```tsx
 import { BorderBeam } from "@stianlarsen/border-beam";
 import "@stianlarsen/border-beam/css";
->>>>>>> 9da553f (Claude fix)
 
 function Card() {
   return (
@@ -41,13 +33,7 @@ function Card() {
 }
 ```
 
-<<<<<<< HEAD
-> **Important:** The parent container must have `position: relative` and a `border-radius` for the beam to follow the container shape.
-=======
-**Important:** You must import the CSS file separately as shown above for the component to work properly.
-
-## `BorderBeam` Component Props
->>>>>>> 9da553f (Claude fix)
+> **Important:** You must import the CSS file separately as shown above. The parent container must have `position: relative` and a `border-radius` for the beam to follow the container shape.
 
 ## Props
 
